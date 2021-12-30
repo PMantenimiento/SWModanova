@@ -1,47 +1,5 @@
-<!DOCTYPE html>
-
-<body>
-  <h1 style="text-align: center; color:rgb(11, 189, 212)">
-    Producción MODANOVA SAS
-  </h1>
-
-  <div class= "left" style="text-align:left; font-size: 20px;
-                      width: 350px; height: 250 px;"><br>
-                      
-    <label for="uname"><b> AREA        </b></label>
-    <input type="text"><br><br>
-
-    <label for="uname"><b> UNIDADES    </b></label>
-    <input type="number"><br><br> 
-
-    <label for="uname"><b> REFERENCIA  </b></label>
-
-    <input type="text"><br><br>
-
-    <label for="uname"><b> NÚMERO OT   </b></label>
-    <input type="number"><br><br>
-
-    <label for="uname"><b> MODULO      </b></label>
-    <input type="number"><br><br>
-
-    <label for="uname"><b> ESTADO      </b></label>
-    <input type="text"><br><br>
-
-    <button (click)="addOT()"
-    style="text-align: center;justify-content:left; display: block; margin: 0 auto; font-size: 30px;background-color: rgb (11, 189, 212);">AGREGAR OT</button>
-  <br>
-  </div><br>
-
-  <div style="justify-content: right;">
-    <h1 style="text-align: center; color: black">Plan de Trabajo</h1>
+<nav>
     <ul>
-      <li *ngIf="items.length == 0">
-          LISTA DE OT VACIA
-      </li>
-      <li *ngFor="let item of items; index as i">
-          {{i}} {{item}}
-          <button (click)="deleteOT(i)"> ELIMINAR</button>
-        </li> 
+        <li><button routerLink="/login"> LOGIN</button></li>
     </ul>
-</div>
-</body>
+</nav>
