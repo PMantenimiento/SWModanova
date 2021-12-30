@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+import { appRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login';
 import { HomeComponent } from './home';
@@ -11,7 +11,7 @@ import { HomeComponent } from './home';
   
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    appRoutingModule,
     FormsModule,
   ],
   declarations: [
